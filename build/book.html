@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2018-01-01" />
+  <title>WordPress from Scratch</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../assets/style.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">WordPress from Scratch</h1>
+<p class="date">2018</p>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#chapter-1---setting-up-a-local-server">Chapter 1 - Setting Up a Local Server</a></li>
+<li><a href="#chapter-two---installing-wordpress">Chapter Two - Installing WordPress</a></li>
+</ul>
+</nav>
+<h1 id="introduction">Introduction</h1>
+<p>Hi, I’m Tania, and you’re about to read the best WordPress tutorial on the internet.</p>
+<figure>
+<img src="../img/wp-logo.png" alt="WordPress Logo" /><figcaption>WordPress Logo</figcaption>
+</figure>
+<h1 id="chapter-1---setting-up-a-local-server">Chapter 1 - Setting Up a Local Server</h1>
+<p>Mac, Windows, Linux</p>
+<h1 id="chapter-two---installing-wordpress">Chapter Two - Installing WordPress</h1>
+<p>Here’s how to install WordPress.</p>
+<pre class="bash"><code>wp core install</code></pre>
+<p>Great!</p>
+<pre class="language-php"><code>&lt;?php get_header(); ?&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-8 blog-main&quot;&gt;
+
+            &lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+    
+                get_template_part( &#39;content&#39;, get_post_format() );
+  
+            endwhile; endif; ?&gt;
+
+        &lt;/div&gt;
+        &lt;?php get_sidebar(); ?&gt;
+    &lt;/div&gt;
+&lt;?php get_footer(); ?&gt;</code></pre>
+<script type='text/javascript' src='../assets/prism.js'></script>
+</body>
+</html>
