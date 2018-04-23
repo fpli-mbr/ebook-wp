@@ -39,3 +39,9 @@ do
 done
 echo "${derived_dir}/*"
 ```
+
+#### Getting each page as its own chapter
+
+```
+pandoc chapters/01-chapter.md -s --no-highlight  --css ../assets/style.css -B assets/template/header.html -A assets/template/footer.html -o build2/chapter1.html && pandoc chapters/02-chapter.md -s --no-highlight  --css ../assets/style.css -B assets/template/header.html -A assets/template/footer.html -o build2/chapter2.html
+```
