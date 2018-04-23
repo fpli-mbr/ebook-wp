@@ -331,3 +331,14 @@ table td {
 		page-break-after: avoid;
 	}*/
 }
+
+::selection {
+    background: rgba(255,245,20,.8);
+    color: #111;
+}
+
+code[class*=language-] ::selection, pre[class*=language-]::selection {
+    text-shadow: none;
+    color: inherit;
+    background: hsla(0,0%,59%,.3)!important;
+}
