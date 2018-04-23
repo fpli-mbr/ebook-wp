@@ -3,7 +3,7 @@
 ### Epub
 
 ```bash
-pandoc assets/metadata.yaml chapters/*.md -o build/book.epub
+pandoc assets/metadata.yaml  --css assets/style-epub.css chapters/*.md --highlight-style assets/new-moon.theme -o build/book.epub
 ```
 
 ### MOBI
