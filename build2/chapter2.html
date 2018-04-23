@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>02-chapter</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../assets/style.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<link rel="stylesheet" href="../assets/prism.css">
+<h1 id="chapter-two---installing-wordpress">Chapter Two - Installing WordPress</h1>
+<p>Here’s how to install WordPress.</p>
+<pre class="bash"><code>wp core install</code></pre>
+<p>Great!</p>
+<pre class="php"><code>&lt;?php get_header(); ?&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-8 blog-main&quot;&gt;
+
+            &lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+    
+                get_template_part( &#39;content&#39;, get_post_format() );
+  
+            endwhile; endif; ?&gt;
+
+        &lt;/div&gt;
+        &lt;?php get_sidebar(); ?&gt;
+    &lt;/div&gt;
+&lt;?php get_footer(); ?&gt;</code></pre>
+<script src="../assets/prism.js"></script>
+</body>
+</html>
