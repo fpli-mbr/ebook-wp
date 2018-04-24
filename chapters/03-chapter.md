@@ -36,8 +36,8 @@ Now we can test the same on the class we just created.
 Object.getPrototypeOf(y);
 ```
 
+
 ```
-[secondary_label Output]
 ƒ () { [native code] }
 ```
 
