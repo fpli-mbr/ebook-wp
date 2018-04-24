@@ -1,9 +1,7 @@
 ---
-title: WordPress from Scratch
-creator:
-- role: author
-  text: Tania Rascia
-publisher:  The Publisher Name
+title: WordPress From Scratch
+author: Tania Rascia
+publisher: Tania Rascia
 date: 2018
 rights: MIT
 cover-image: img/wp-logo.png
