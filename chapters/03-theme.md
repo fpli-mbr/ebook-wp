@@ -1,5 +1,6 @@
-
-# Understanding Classes in JavaScript
+---
+title: Developing a Simple Theme
+---
 
 ### Introduction
 
@@ -83,7 +84,7 @@ In the prototypes and inheritance tutorial, we created an example based around c
 
 Originally, a constructor function would be initialized with a number of parameters, which would be assigned as properties of `this`, referring to the function itself. The first letter of the identifier would be capitalized by convention.
 
-```js
+```sql
 [label constructor.js]
 // Initializing a constructor function
 function Hero(name, level) {
@@ -94,7 +95,7 @@ function Hero(name, level) {
 
 The new class syntax, shown below, is structured very similarly. 
 
-```js
+```php
 [label class.js]
 // Initializing a class definition
 class Hero {

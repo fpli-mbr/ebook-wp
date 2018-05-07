@@ -4,22 +4,24 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>03-chapter</title>
+  <title>Developing a Simple Theme</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-<link rel="stylesheet" href="../assets/prism.css">
-<h1 id="understanding-classes-in-javascript">Understanding Classes in JavaScript</h1>
+<link rel="stylesheet" href="../assets/css/prism.css">
+<header>
+<h1 class="title">Developing a Simple Theme</h1>
+</header>
 <h3 id="introduction">Introduction</h3>
 <p>In <a href="https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript">Understanding Prototypes and Inheritance in JavaScript</a>, we learned how JavaScript is a prototype-based language, and every object in JavaScript has a hidden internal property called <code>[[Prototype]]</code> that can be used to extend object properties and methods.</p>
 <p>Until recently, industrious developers used <a href="https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript#constructor-functions">constructor functions</a> to mimic an object-oriented design pattern in JavaScript. The language specification ECMAScript 2015, often referred to as ES6, introduced classes to the JavaScript language. Classes are often described as “syntactic sugar” over prototypes and inheritance, which means they offer a cleaner and easier syntax without offering new functionality.</p>
@@ -36,8 +38,7 @@ const y = class {}</code></pre>
 ƒ () { [native code] }</code></pre>
 <p>Now we can test the same on the class we just created.</p>
 <pre class="language-js"><code>Object.getPrototypeOf(y);</code></pre>
-<pre><code>[secondary_label Output]
-ƒ () { [native code] }</code></pre>
+<pre><code>ƒ () { [native code] }</code></pre>
 <p>We can see that the code declared with <code>function</code> and <code>class</code> both return a function <code>[[Prototype]]</code>. With prototypes, we learned that any function can become a constructor instance using the <code>new</code> keyword.</p>
 <pre class="language-js"><code>const x = function() {}
 
@@ -62,14 +63,14 @@ constructor: class</code></pre>
 <h2 id="defining-a-class">Defining a Class</h2>
 <p>In the prototypes and inheritance tutorial, we created an example based around character creation in a text-based role-playing game. Let’s continue with that example here to update the syntax from functions to classes.</p>
 <p>Originally, a constructor function would be initialized with a number of parameters, which would be assigned as properties of <code>this</code>, referring to the function itself. The first letter of the identifier would be capitalized by convention.</p>
-<pre class="language-js"><code>[label constructor.js]
+<pre class="language-sql"><code>[label constructor.js]
 // Initializing a constructor function
 function Hero(name, level) {
     this.name = name;
     this.level = level;
 }</code></pre>
 <p>The new class syntax, shown below, is structured very similarly.</p>
-<pre class="language-js"><code>[label class.js]
+<pre class="language-php"><code>[label class.js]
 // Initializing a class definition
 class Hero {
     constructor(name, level) {
@@ -199,6 +200,6 @@ class Mage extends Hero {
 <p>In this article, we learned about the similarities and differences between JavaScript constructor functions and ES6 classes. Both classes and constructors imitate an object-oriented inheritance model to JavaScript, which is a prototype-based inheritance language.</p>
 <p>Understanding prototypical inheritance is paramount to being an effective JavaScript developer. Being familiar with classes is extremely helpful, as popular JavaScript libraries such as <a href="https://reactjs.org/">React</a> make frequent use of the <code>class</code> syntax.</p>
 <p>To learn more about classes, view the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">Class Reference on the Mozilla Developer Network</a>.</p>
-<script src="../assets/prism.js"></script>
+<script src="../assets/js/prism.js"></script>
 </body>
 </html>

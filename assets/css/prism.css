@@ -1,8 +1,12 @@
+pre, code, pre code {
+    font-size: 14px;
+}
+
 code[class*=language-],
 pre[class*=language-],
 pre code {
     color: #d5d5d5;
-    font-family: Menlo, Roboto Mono, Courier New, monospace;
+    font-family: Menlo, 'Roboto Mono', Roboto Mono, Courier New, monospace;
     direction: ltr;
     text-align: left;
     white-space: pre;
@@ -10,15 +14,15 @@ pre code {
     word-break: normal;
     line-height: 1.6;
     font-weight: 400;
-    -moz-tab-size: 2;
-    -o-tab-size: 2;
-    tab-size: 2;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
     -webkit-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
     border-radius: 6px;
     margin: 1.5rem 0;
-    -webkit-font-smoothing: subpixel-antialiased
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 @media (min-width:1120px) {
@@ -35,7 +39,7 @@ pre code {
     padding: 1rem;
     overflow: auto;
     background-color: #333;
-    box-shadow: 2px 3px 20px rgba(0, 0, 0, .1)
+    box-shadow: 2px 3px 20px rgba(0, 0, 0, .1);
 }
 
 @media (min-width:600px) {
@@ -56,7 +60,6 @@ kbd {
     margin: 0 .1em;
     padding: .1em .6em;
     text-shadow: 0 1px 0 #fff;
-    font-size: 14px
 }
 
 :not(pre)>code[class*=language-] {
@@ -72,7 +75,7 @@ kbd {
     font-weight: 400;
     color: #222;
     border-radius: 0;
-    background: rgba(0, 0, 0, .06)
+    background: rgba(0, 0, 0, .06);
 }
 
 code[class*=language-css],
@@ -80,6 +83,12 @@ code[class*=language-less],
 code[class*=language-sass],
 code[class*=language-scss] {
     color: #c9c
+}
+
+@media screen and (min-width: 600px) {
+    pre, code, pre code {
+        font-size: 15px;
+    }
 }
 
 .filename {

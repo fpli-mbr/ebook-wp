@@ -1,5 +1,6 @@
-
-# Chapter Two - Installing WordPress
+---
+title: Chapter Two - Installing WordPress
+---
 
 Here's how to install WordPress.
 
@@ -9,7 +10,7 @@ wp core install
 
 Great!
 
-```language-php
+```php
 <?php get_header(); ?>
 	<div class="row">
 		<div class="col-sm-8 blog-main">
