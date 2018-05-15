@@ -1,4 +1,3 @@
-
 ---
 title: Chapter 1 - Setting Up a Local Server
 ---

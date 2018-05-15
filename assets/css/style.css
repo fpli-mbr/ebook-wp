@@ -9,25 +9,29 @@ html {
 body {
 	color: #272727;
 	font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
-	line-height: 1.7;
+	line-height: 1.6;
 	padding: 1rem;
 	margin: auto;
-	max-width: 50rem;
-	background: #ffffff;
+	max-width: 48rem;
+	background:	#e2cea8;
+	color: #2F1414 !important;
 }
 
 a {
 	color: #0088cc;
 	text-decoration: none;
+	color: #952425;
 }
 
 a:visited {
 	color: #0088cc;
+	color: #952425;
 }
 
 a:hover {
 	color: #005580;
 	text-decoration: underline;
+	color: #952425;
 }
 
 a:active {
@@ -121,7 +125,7 @@ dl {
 	ul,
 	ol,
 	dl {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 	h1 {
 		font-size: 2.7rem;
@@ -268,7 +272,7 @@ img {
 figure {
 	display: block;
 	text-align: center;
-	margin: 1rem 0;
+	margin: 2rem 0;
 }
 
 figure img {
