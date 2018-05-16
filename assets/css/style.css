@@ -13,25 +13,20 @@ body {
 	padding: 1rem;
 	margin: auto;
 	max-width: 48rem;
-	background:	#e2cea8;
-	color: #2F1414 !important;
 }
 
 a {
 	color: #0088cc;
 	text-decoration: none;
-	color: #952425;
 }
 
 a:visited {
 	color: #0088cc;
-	color: #952425;
 }
 
 a:hover {
 	color: #005580;
 	text-decoration: underline;
-	color: #952425;
 }
 
 a:active {
@@ -105,8 +100,9 @@ h4 {
 }
 
 h5 {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	margin-bottom: 0;
+	font-family: Helvetica Neue, Arial, sans-serif;
 }
 
 h6 {
@@ -150,7 +146,7 @@ dl {
 	}
 	
 	h5 {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		margin-bottom: 0;
 	}
 	

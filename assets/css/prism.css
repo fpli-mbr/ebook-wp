@@ -30,7 +30,7 @@ pre code {
     code[class*=language-],
     pre[class*=language-],
     pre code {
-        margin: 2.5rem 0
+        margin: 1rem 0 2rem;
     }
 }
 
